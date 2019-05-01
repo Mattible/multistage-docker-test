@@ -1,0 +1,6 @@
+#Ignore any unnecessary development files (.git, test built modules, makefile, etc)
+.git
+Makefile
+golang-test
+README.md
+Dockerfile
