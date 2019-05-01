@@ -3,11 +3,11 @@ A simple http app built in GoLang then wrapped up in a multi-stage docker file f
 
 # Overview
 
-  1.  Getting Started
-  2.  Docker
-    2.1 Requirements
-    2.2 Running Docker
-  3.  Improvements
+    1.  Getting Started
+    2.  Docker
+      2.1 Requirements
+      2.2 Running Docker
+    3.  Improvements
   
 # 1. Getting Started
 
