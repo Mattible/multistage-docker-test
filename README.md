@@ -3,11 +3,11 @@ A simple http app built in GoLang then wrapped up in a multi-stage docker file f
 
 # Overview
 
-  1.  Getting Started
-  2.  Docker
-    2.1 Requirements
-    2.2 Running Docker
-  3.  Improvements
+    1.  Getting Started
+    2.  Docker
+      2.1 Requirements
+      2.2 Running Docker
+    3.  Improvements
   
 # 1. Getting Started
 
@@ -45,7 +45,8 @@ The following are a list of changes/improvements made over the original in order
     - `goLang_Download` - Responsible for downloading and caching the GoLang Dependancies.
     - `packager` - Responsible for compiling then packaging the GoLang application.
     - Stage 3 - For running our application as the resulting image
+  - Added no cache to the installing git step to help shrink the `goLang_Download` stage.
+    - `RUN apk add git,`   --->   `RUN apk add git --no-cache,`
   
-  
-  
+Resulting Image Size: 7.91 MB
   
