@@ -18,6 +18,7 @@ func main() {
 	r.HandleFunc("/go", goquote)
 	r.HandleFunc("/opt", opttruth)
 
+	// Address only requires a port to be compatible on the local machine or in a docker container.
 	s := &http.Server{
 		Handler:      r,
 		Addr:         ":8000",
