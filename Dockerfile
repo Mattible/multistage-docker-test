@@ -19,6 +19,6 @@ RUN CGO_ENABLED=0 GOOS=linux go build -o golang-test  .
 # Stage 3 
 FROM scratch
 # Copy just the compiled golang package
-COPY --from=packager ./app/golang-test /app/golang-test
+COPY --from=packager /app/golang-test /app/golang-test
 ENTRYPOINT ["/app/golang-test"]
 EXPOSE 8000
